@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/19 18:21:01 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/16 18:54:55 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/16 19:12:29 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
-
-void	ft_print_numbers(void)
-
+void    ft_div_mod(int a, int b, int *div, int *mod)
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		write(1, &num, 1);
-		num++;
-	}
+        *div = a / b;
+        *mod = a % b;
 }
 
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// 	return (0);
-// }
+#include <stdio.h>
+
+int main   (void)
+{
+    int a;
+    int b;
+    int div;
+    int mod;
+
+    a = 42;
+    b = 4;
+    
+    ft_div_mod(a, b, &div, &mod);
+    
+    printf("a=%d, b=%d, div=%d, mod=%d\n", a, b, div, mod);
+    return (0);
+}

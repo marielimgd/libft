@@ -5,29 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/19 18:21:01 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/16 16:50:48 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/16 17:01:03 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
 
-void	ft_print_numbers(void)
-
+void    ft_putchar(char m)
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		write(1, &num, 1);
-		num++;
-	}
+    write(1, &m, 1);
 }
 
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// 	return (0);
-// }
+void    ft_print_number(void)
+{
+    int num;
+
+    num = '0';
+    while (num <= '9')
+    {
+        ft_putchar(num);
+        num++;
+    }
+}
+
+int main(void)
+{
+    ft_print_number();
+}

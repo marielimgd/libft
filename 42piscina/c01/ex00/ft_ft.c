@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/19 18:21:01 by marielidias      ###   ########.fr       */
+/*   Created: 2024/08/19 18:28:20 by marielidias       #+#    #+#             */
+/*   Updated: 2024/08/19 18:59:57 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <unistd.h>
 
-void	ft_print_numbers(void)
+void ft_ft(int *nbr) 
 
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		write(1, &num, 1);
-		num++;
-	}
+    *nbr = 42;
 }
-
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// 	return (0);
-// }

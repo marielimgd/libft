@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/19 18:21:01 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/16 17:08:03 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/16 17:57:41 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
-
-void	ft_print_numbers(void)
-
+void    ft_ft(int *nbr)
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		write(1, &num, 1);
-		num++;
-	}
+    *nbr = 42;
 }
 
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// 	return (0);
-// }
+#include <stdio.h>
+
+int main(void)
+{
+    int a; //declaro variavel de inteiros
+    int *ptr; //declaro o ponteiro para um inteiro
+    
+    ptr = &a; // o ponteiro aponta para a variavel a. Ao assinalar valor ao ponteiro nao usamos o *
+    ft_ft(ptr); //chama a funçao com o valor do ponteiro que agora é a
+    printf("%d\n", a);
+}
