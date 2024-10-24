@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/20 09:48:48 by mmariano         ###   ########.fr       */
+/*   Created: 2024/10/10 14:20:03 by mmariano          #+#    #+#             */
+/*   Updated: 2024/10/10 14:44:33 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_POINT_H
 
-void	ft_print_alphabet(void)
+# define FT_POINT_H
 
+typedef struct i_point
 {
-	char	letra;
+	int	x;
+	int	y;
+}	t_point;
 
-	letra = 'a';
-	while (letra <= 'z')
-	{
-		write(1, &letra, 1);
-		letra++;
-	}
-}
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return 0;
-}
-*/
+#endif

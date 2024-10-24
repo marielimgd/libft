@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/20 09:48:48 by mmariano         ###   ########.fr       */
+/*   Created: 2024/08/21 13:01:33 by mmariano          #+#    #+#             */
+/*   Updated: 2024/08/22 18:17:11 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+// #include <stdio.h>
+// #include <unistd.h>
 
-void	ft_print_alphabet(void)
-
+int	ft_strlen(char *str)
 {
-	char	letra;
+	int	counter;
 
-	letra = 'a';
-	while (letra <= 'z')
+	counter = 0;
+	while (*str != '\0')
 	{
-		write(1, &letra, 1);
-		letra++;
+		counter++;
+		str++;
 	}
+	return (counter);
 }
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return 0;
-}
-*/
+
+// int main (void)
+// {
+// 	char	text[] = "Norminette me ajuda";
+// 	int length = ft_strlen(text);
+
+// 	printf("The text has %d chars", length);
+// 	return (0);
+// }

@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/20 09:48:48 by mmariano         ###   ########.fr       */
+/*   Created: 2024/08/20 16:24:12 by mmariano          #+#    #+#             */
+/*   Updated: 2024/08/23 08:07:45 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
-
+// #include <stdio.h>
+// 
+void	ft_swap(int *a, int *b)
 {
-	char	letra;
+	int	tmp;
 
-	letra = 'a';
-	while (letra <= 'z')
-	{
-		write(1, &letra, 1);
-		letra++;
-	}
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return 0;
-}
-*/
+//
+// int	main(void)
+// {
+// 	int a = 42;
+// 	int b = 1;
+// 	int *tmp = &a; tirar essa linha, se não não compila!!
+
+// 	printf("Before swap: a = %d, b = %d\n", a, b);
+// 	ft_swap(&a,&b);
+// 	printf("After swap: a = %d, b = %d\n", a, b);
+// 	return 0;
+// }

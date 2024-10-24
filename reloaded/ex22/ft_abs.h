@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ex03.c                                        :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
+/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 17:51:50 by marielidias       #+#    #+#             */
-/*   Updated: 2024/08/19 18:19:35 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/10 13:56:18 by mmariano          #+#    #+#             */
+/*   Updated: 2024/10/10 16:24:44 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_numbers(void);
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-int	main(void)
-{
-        ft_print_numbers();
-        return (0);
-}
+# define ABS(Value) (Value * ((Value < 0) * (-1) + (Value > 0)))
+
+#endif

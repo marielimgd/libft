@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
+/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/19 18:21:01 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/08/20 09:50:13 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <unistd.h>
 
@@ -25,9 +24,10 @@ void	ft_print_numbers(void)
 		num++;
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// 	return (0);
-// }
+/*
+int	main(void)
+{
+	ft_print_numbers();
+	return (0);
+}
+*/
