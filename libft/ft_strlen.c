@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ex03.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
+/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 17:51:50 by marielidias       #+#    #+#             */
-/*   Updated: 2024/08/19 18:19:35 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/24 18:42:10 by mmariano          #+#    #+#             */
+/*   Updated: 2024/10/24 18:42:14 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_numbers(void);
-
-int	main(void)
+int ft_strlen(char *str)
 {
-        ft_print_numbers();
-        return (0);
+    int len;
+
+    len = 0;
+    while(str[len] != '\0')
+        len++;
+    return (len);  
 }

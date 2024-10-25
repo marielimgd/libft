@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/20 09:48:48 by mmariano         ###   ########.fr       */
+/*   Created: 2024/10/24 17:42:03 by mmariano          #+#    #+#             */
+/*   Updated: 2024/10/24 17:43:16 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
-
+int	ft_isprint(int c)
 {
-	char	letra;
-
-	letra = 'a';
-	while (letra <= 'z')
-	{
-		write(1, &letra, 1);
-		letra++;
-	}
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return 0;
-}
-*/

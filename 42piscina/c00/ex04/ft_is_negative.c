@@ -6,7 +6,7 @@
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/16 17:46:48 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/08/20 12:59:01 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@ void	ft_is_negative(int n)
 	else
 		write(1, "P", 1);
 }
-
-/*int main(void)
+/*
+int	main(void)
 {
 	ft_is_negative(1);
 	ft_is_negative(-42);
 	ft_is_negative(42);
 	return (0);
-}*/
+}
+*/

@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:31:27 by mmariano          #+#    #+#             */
-/*   Updated: 2024/08/20 09:48:48 by mmariano         ###   ########.fr       */
+/*   Created: 2024/10/10 13:56:18 by mmariano          #+#    #+#             */
+/*   Updated: 2024/10/10 16:24:44 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-void	ft_print_alphabet(void)
+# define ABS(Value) (Value * ((Value < 0) * (-1) + (Value > 0)))
 
-{
-	char	letra;
-
-	letra = 'a';
-	while (letra <= 'z')
-	{
-		write(1, &letra, 1);
-		letra++;
-	}
-}
-/*
-int	main(void)
-{
-	ft_print_alphabet();
-	return 0;
-}
-*/
+#endif
