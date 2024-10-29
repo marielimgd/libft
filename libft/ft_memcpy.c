@@ -6,11 +6,11 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 17:37:54 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/25 18:06:33 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 10:39:44 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <string.h>
+# include <libft.h>
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {

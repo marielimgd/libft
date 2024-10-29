@@ -6,27 +6,32 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:08:02 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/28 10:10:55 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 10:48:02 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*s;
-	char	*d;
-	size_t	i;
+	char	*ptr_src;
+	char	*ptr_dst;
+	size_t	index;
+	
+    if (!dst && !src)
+        return (NULL);
 
-	s = (char *)src;
-	d = (char *)dst;
-	i = 0;
-	if (d > s)
+	ptr_src = (char *)src;
+	ptr_dst = (char *)dst;
+	index = 0;
+	if (ptr_dst > ptr_src)
 		while (len-- > 0)
-			d[len] = s[len];
+			ptr_dst[len] = ptr_src[len];
 	else
-		while (i < len)
+		while (index < len)
 		{
-			d[i] = s[i];
-			i++;
+			ptr_dst[index] = ptr_src[index];
+			index++;
 		}
 	return (dst);
 }
