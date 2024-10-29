@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 18:37:40 by mmariano          #+#    #+#             */
-/*   Updated: 2024/09/03 15:48:43 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:05:55 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

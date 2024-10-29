@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 15:33:02 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 16:40:20 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/29 18:23:20 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/29 18:33:22 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+char *ft_strdup(const char *src)
 {
-    unsigned char *str1;
-    unsigned char *str2;
-    size_t index;
+    char *dest;
+    int index;
+    int len;
 
-    str1 = (unsigned char *)s1; 
-    str2 = (unsigned char *)s2; 
+    if (src == NULL)
+        return (NULL);
+
+    len = (ft_strlen(src) + 1);
+    dest = (char *)malloc(len);
+    if (dest == NULL)
+        return (NULL);
+    
     index = 0;
-
-    while (index < n)
+    while(src[index] != '\0')
     {
-        if (str1[index] != str2[index]) 
-            return (str1[index] - str2[index]); 
-        index++; 
+        dest[index] = src[index];
+        index++;
     }
-    return (0); 
+    dest[index] = '\0';
+    return(dest);
 }

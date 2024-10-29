@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 15:33:02 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 16:40:20 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/29 17:24:41 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/29 18:22:17 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+void *ft_calloc(size_t count, size_t size)
 {
-    unsigned char *str1;
-    unsigned char *str2;
-    size_t index;
+    unsigned char *ptr;
+    size_t total_size;
 
-    str1 = (unsigned char *)s1; 
-    str2 = (unsigned char *)s2; 
-    index = 0;
+    if (count == 0 || size == 0)
+        return NULL;
+    if (count > 0 && size > 0 && count > (size_t)(-1) / size)
+        return NULL;
 
-    while (index < n)
-    {
-        if (str1[index] != str2[index]) 
-            return (str1[index] - str2[index]); 
-        index++; 
-    }
-    return (0); 
+    total_size = count * size;
+
+    ptr = (unsigned char *)malloc(total_size);
+    if (!ptr)
+        return NULL;
+    ft_bzero(ptr, total_size);
+
+    return (ptr);
 }
