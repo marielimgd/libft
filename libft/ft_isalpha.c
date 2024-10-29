@@ -6,9 +6,11 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 08:53:45 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/24 10:06:26 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 13:30:56 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(char c)
 {
