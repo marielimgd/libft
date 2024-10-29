@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:10:01 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 17:15:04 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 18:51:18 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	ft_atoi(const char *str)
 	isneg = 1;
 	index = 0;
 	while (str[index] && (str[index] == ' ' || str[index] == '\t'
-			|| str[index] == '\n' || str[index] == '\r'
-			|| str[index] == '\v' || str[index] == '\f'))
+			|| str[index] == '\n' || str[index] == '\r' || str[index] == '\v'
+			|| str[index] == '\f'))
 		index++;
 	if (str[index] == '+')
 		index++;

@@ -6,21 +6,21 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:55:25 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 15:01:36 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 18:55:30 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	size_t	index;
-    
-    index = ft_strlen(str);
+
+	index = ft_strlen(str);
 	while (index > 0)
 	{
 		if (str[index - 1] == (char)c)
-			return ((char *) &str[index - 1]);
+			return ((char *)&str[index - 1]);
 		index--;
 	}
 	return (NULL);
@@ -36,5 +36,5 @@ char *ft_strrchr(const char *str, int c)
 //     else
 //         printf("Char not found.\n");
 
-//     return 0;
+//     return (0);
 // }
