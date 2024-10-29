@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 18:46:34 by mmariano          #+#    #+#             */
-/*   Updated: 2024/10/25 17:43:43 by marielidias      ###   ########.fr       */
+/*   Created: 2024/10/25 17:37:54 by marielidias       #+#    #+#             */
+/*   Updated: 2024/10/25 18:06:33 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <string.h> // colocar no libft.h depois
+# include <string.h>
 
-void *ft_memset(void *b, int c, size_t len)
+void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
-    size_t i = 0;
-    unsigned char *ptr = (unsigned char *)b;
-    
-    while (i < len)
-        ptr[i++] = (unsigned char)c;
-    return (b);
+    unsigned char    *tmp_dest;
+    unsigned char    *tmp_src;
+
+    tmp_dest = (unsigned char *) dest;
+    tmp_src = (unsigned char *) src;
+
+    if (dest == (void *)0 && src == (void *)0)
+        return (dest);
+            
+    while (n > 0)
+    {
+        *(tmp_dest++) = *(tmp_src++);
+        n--;
+    }
+    return (dest);
 }
+
+
+
+
