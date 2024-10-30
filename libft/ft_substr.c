@@ -6,7 +6,7 @@
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 10:21:02 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/30 14:40:18 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:23:08 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char *s, unsigned int start, size_t len)
 {
-	size_t index;
-	size_t str_len;
-    char   *str;
+	size_t	index;
+	size_t	str_len;
+	char	*str;
 
 	if (!s)
 		return (NULL);
@@ -25,10 +25,10 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > str_len - start)
 		len = str_len - start;
-    str = ft_calloc(len + 1, sizeof(char));
+	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-    index = 0;
+	index = 0;
 	while (index < len)
 	{
 		str[index] = s[start + index];
