@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:03:13 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 18:55:45 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 19:39:50 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 // --- PART 1 ---
 
-int		ft_isalpha(char c);
+int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);

@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:49:37 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 18:55:16 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 19:15:42 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t src_len;
+	size_t	src_len;
 
 	src_len = ft_strlen(src);
 	if (src_len + 1 < dstsize)

@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:08:02 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 18:54:53 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 19:15:00 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char *ptr_src;
-	char *ptr_dst;
-	size_t index;
+	char	*ptr_src;
+	char	*ptr_dst;
+	size_t	index;
 
 	if (!dst && !src)
 		return (NULL);
-
 	ptr_src = (char *)src;
 	ptr_dst = (char *)dst;
 	index = 0;
@@ -28,10 +27,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (len-- > 0)
 			ptr_dst[len] = ptr_src[len];
 	else
+	{
 		while (index < len)
 		{
 			ptr_dst[index] = ptr_src[index];
 			index++;
 		}
+	}
 	return (dst);
 }

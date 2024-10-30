@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:24:41 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 18:52:16 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/29 21:28:51 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			total_size;
 
 	if (count == 0 || size == 0)
-		return (NULL);
-	if (count > 0 && size > 0 && count > (size_t)(-1) / size)
+		return (malloc(0));
+	if (count > (size_t)(-1) / size)
 		return (NULL);
 	total_size = count * size;
 	ptr = (unsigned char *)malloc(total_size);
