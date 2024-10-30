@@ -6,7 +6,7 @@
 /*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:03:13 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/30 15:04:50 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/10/30 16:08:45 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strdup(const char *src);
 
 char	*ft_substr(char *str, unsigned int start, size_t len);
 char	*ft_strjoin(char *s1, char *s2);
-// char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strtrim(char const *s1, char const *set);
 // int		ft_get_number_of_words(char const *s, char c);
 // char	**ft_split(char const *s, char c);
 // char	*ft_itoa(int n);
