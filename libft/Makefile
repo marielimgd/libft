@@ -6,7 +6,7 @@
 #    By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 18:39:36 by marielidias       #+#    #+#              #
-#    Updated: 2024/10/29 18:43:50 by marielidias      ###   ########.fr        #
+#    Updated: 2024/10/31 15:48:38 by marielidias      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,3 +60,6 @@ fclean: clean
 re: clean all
 
 .PHONY: all clean fclean re bonus
+
+test:
+	@gcc ft_split_new.c ft_strlen.c ft_calloc.c ft_bzero.c && ./a.out
