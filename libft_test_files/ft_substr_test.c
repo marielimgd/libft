@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr_test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 14:52:09 by mmariano          #+#    #+#             */
-/*   Updated: 2024/10/30 14:58:46 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/10/31 09:04:47 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
