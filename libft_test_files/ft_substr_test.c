@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 14:52:09 by mmariano          #+#    #+#             */
-/*   Updated: 2024/10/31 09:05:54 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/31 09:07:04 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,4 @@ int main() {
     printf("Tests run: %d\n", g_tests_run);
 
     return result != 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c4c75d0 (arrumando test file)
