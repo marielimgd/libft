@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:42:04 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/31 19:08:45 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/10/31 19:21:33 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,10 +73,10 @@ static char	**write_substr(char **res_list, const char *s, char c)
 				return (NULL);
 			}
 			index++;
-			s += start; // Move pointer forward
+			s += start;
 		}
 	}
-	res_list[index] = NULL; // Null-terminate the array
+	res_list[index] = NULL;
 	return (res_list);
 }
 
@@ -90,28 +90,5 @@ char	**ft_split(char const *s, char c)
 	if (!res_list)
 		return (NULL);
 	res_list = write_substr(res_list, s, c);
-	return (res_list); // Return the result list
+	return (res_list);
 }
-
-// int	main(void)
-// {
-// 	char	*str;
-// 	char	delimiter;
-// 	char	**result;
-
-// 	str = " ";
-// 	delimiter = ' ';
-// 	result = ft_split(str, delimiter);
-// 	if (!result)
-// 	{
-// 		printf("Memory allocation failed\n");
-// 		return (1);
-// 	}
-// 	for (int i = 0; result[i] != NULL; i++)
-// 	{
-// 		printf("Word %d: %s\n", i + 1, result[i]);
-// 		free(result[i]);
-// 	}
-// 	free(result);
-// 	return (0);
-// }
