@@ -6,7 +6,7 @@
 #    By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 18:39:36 by marielidias       #+#    #+#              #
-#    Updated: 2024/11/01 12:20:27 by marielidias      ###   ########.fr        #
+#    Updated: 2024/11/01 13:32:40 by marielidias      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,12 @@ SRC = ft_isalpha \
 	ft_strtrim \
 	ft_strsplit \
 	ft_itoa \
-	
+	ft_strmapi \
+	ft_striteri \
+	ft_putchar_fd \
+	ft_putstr_fd \
+	ft_putendl_fd \
+	ft_putnbr_fd 
 
 SRCS = $(addsuffix .c, $(SRC))
 OBJS = $(addsuffix .o, $(SRC))

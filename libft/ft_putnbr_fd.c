@@ -6,15 +6,15 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:26:01 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/01 12:32:06 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/01 13:39:01 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	long    num;
+	long	num;
 
 	num = n;
 	if (num < 0)
