@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:06:29 by mmariano          #+#    #+#             */
-/*   Updated: 2024/11/01 12:06:36 by marielidias      ###   ########.fr       */
+/*   Created: 2024/11/01 12:26:01 by marielidias       #+#    #+#             */
+/*   Updated: 2024/11/01 12:32:06 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void ft_putnbr_fd(int n, int fd)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0'
-			&& c <= '9'))
-		return (1);
-	return (0);
+	long    num;
+
+	num = n;
+	if (num < 0)
+	{
+		ft_putchar_fd('-', fd);
+		num = num * -1;
+	}
+	if (num > 9)
+		ft_putnbr_fd((num / 10), fd);
+	ft_putchar_fd('0' + (num % 10), fd);
 }
