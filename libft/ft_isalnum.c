@@ -6,11 +6,9 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 16:06:29 by mmariano          #+#    #+#             */
-/*   Updated: 2024/11/01 12:06:36 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/05 09:19:30 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalnum(int c)
 {

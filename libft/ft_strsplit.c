@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:42:04 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/31 19:21:33 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/05 12:16:49 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,4 +91,5 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	res_list = write_substr(res_list, s, c);
 	return (res_list);
+	free(res_list);
 }

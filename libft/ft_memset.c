@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 18:46:34 by mmariano          #+#    #+#             */
-/*   Updated: 2024/11/04 18:23:40 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/11/05 11:57:44 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

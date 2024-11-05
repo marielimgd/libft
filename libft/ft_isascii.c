@@ -6,11 +6,9 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 16:55:32 by mmariano          #+#    #+#             */
-/*   Updated: 2024/10/29 13:31:00 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/05 09:19:44 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

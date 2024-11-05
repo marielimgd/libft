@@ -6,11 +6,9 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:11:20 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/01 13:40:54 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/05 12:11:00 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
