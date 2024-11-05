@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+         #
+#    By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 18:39:36 by marielidias       #+#    #+#              #
-#    Updated: 2024/11/01 13:32:40 by marielidias      ###   ########.fr        #
+#    Updated: 2024/11/05 17:38:58 by mmariano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ SRC = ft_isalpha \
 	ft_substr \
 	ft_strjoin \
 	ft_strtrim \
-	ft_strsplit \
+	ft_split \
 	ft_itoa \
 	ft_strmapi \
 	ft_striteri \
@@ -57,9 +57,6 @@ OBJS = $(addsuffix .o, $(SRC))
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
-bonus: $(OBJS) $(BONUS_OBJS)
-	$(AR) $(NAME) $^
-
 all: $(NAME)
 
 clean:
@@ -71,6 +68,3 @@ fclean: clean
 re: clean all
 
 .PHONY: all clean fclean re bonus
-
-test:
-	@gcc ft_split_new.c ft_strlen.c ft_calloc.c ft_bzero.c && ./a.out
