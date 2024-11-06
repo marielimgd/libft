@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:16:05 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 18:54:40 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/06 11:38:11 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)(str + index));
 		index++;
 	}
-	return (0);
+	return (NULL);
 }
