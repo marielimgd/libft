@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:19:45 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/01 13:34:10 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/07 11:29:23 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char *s, int fd)
 	index = 0;
 	while (s[index])
 	{
-		write(fd, &s[index], 1);
+		write((int)fd, &s[index], 1);
 		index++;
 	}
 }

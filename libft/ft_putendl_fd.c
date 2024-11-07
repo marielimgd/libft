@@ -6,7 +6,7 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:23:25 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/01 13:40:28 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/07 11:29:12 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[index], 1);
 		index++;
 	}
-	write(fd, "\n", 1);
+	write((int)fd, "\n", 1);
 }
