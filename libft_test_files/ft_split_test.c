@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit_test.c                                    :+:      :+:    :+:   */
+/*   ft_split_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:58:20 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/05 12:15:11 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/07 10:41:02 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ static void free_str(char **strs, int index) {
 }
 
 
-// Test cases for ft_strsplit
+// Test cases for ft_split
 static char *test_split_multiple_delimiters() {
-    char **result = ft_strsplit("hello,,world", ',');
+    char **result = ft_split("hello,,world", ',');
     MU_ASSERT("Failed to split on multiple delimiters", result != NULL);
     MU_ASSERT("First word not found", strcmp(result[0], "hello") == 0);
     MU_ASSERT("Second word not found", strcmp(result[1], "world") == 0);
@@ -38,7 +38,7 @@ static char *test_split_multiple_delimiters() {
 }
 
 static char *test_split_no_delimiter() {
-    char **result = ft_strsplit("hello", ',');
+    char **result = ft_split("hello", ',');
     MU_ASSERT("Failed to split with no delimiter", result != NULL);
     MU_ASSERT("Expected single word", strcmp(result[0], "hello") == 0);
     MU_ASSERT("Expected NULL at the end", result[1] == NULL);
@@ -47,7 +47,7 @@ static char *test_split_no_delimiter() {
 }
 
 static char *test_split_only_delimiters() {
-    char **result = ft_strsplit(",,,,", ',');
+    char **result = ft_split(",,,,", ',');
     MU_ASSERT("Failed to handle string of only delimiters", result != NULL);
     MU_ASSERT("Expected NULL at the beginning", result[0] == NULL);
     free(result);
@@ -55,7 +55,7 @@ static char *test_split_only_delimiters() {
 }
 
 static char *test_split_empty_string() {
-    char **result = ft_strsplit("", ',');
+    char **result = ft_split("", ',');
     MU_ASSERT("Failed to handle empty string", result != NULL);
     MU_ASSERT("Expected NULL at the beginning", result[0] == NULL);
     free(result);
@@ -63,13 +63,13 @@ static char *test_split_empty_string() {
 }
 
 static char *test_split_null_string() {
-    char **result = ft_strsplit(NULL, ',');
+    char **result = ft_split(NULL, ',');
     MU_ASSERT("Expected NULL for null input", result == NULL);
     return NULL;
 }
 
 static char *test_split_leading_delimiters() {
-    char **result = ft_strsplit(",,hello,world", ',');
+    char **result = ft_split(",,hello,world", ',');
     MU_ASSERT("Failed to handle leading delimiters", result != NULL);
     MU_ASSERT("First word not found", strcmp(result[0], "hello") == 0);
     MU_ASSERT("Second word not found", strcmp(result[1], "world") == 0);
@@ -79,7 +79,7 @@ static char *test_split_leading_delimiters() {
 }
 
 static char *test_split_trailing_delimiters() {
-    char **result = ft_strsplit("hello,world,,", ',');
+    char **result = ft_split("hello,world,,", ',');
     MU_ASSERT("Failed to handle trailing delimiters", result != NULL);
     MU_ASSERT("First word not found", strcmp(result[0], "hello") == 0);
     MU_ASSERT("Second word not found", strcmp(result[1], "world") == 0);
