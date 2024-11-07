@@ -6,11 +6,9 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:58:17 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 19:07:00 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/07 08:33:40 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

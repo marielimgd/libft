@@ -6,11 +6,9 @@
 /*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:54:06 by marielidias       #+#    #+#             */
-/*   Updated: 2024/10/29 19:07:03 by marielidias      ###   ########.fr       */
+/*   Updated: 2024/11/07 08:33:35 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

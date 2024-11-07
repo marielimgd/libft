@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:10:01 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/06 17:31:52 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/11/07 08:45:26 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,24 @@ int	ft_atoi(const char *str)
 {
 	int	num;
 	int	isneg;
-	int	index;
+	int	i;
 
 	num = 0;
 	isneg = 1;
-	index = 0;
-	while (str[index] && (str[index] == ' ' || (str[index] >= 9 
-			&& str[index] <= 13)))
-		index++;
-	if (str[index] == '+')
-		index++;
-	else if (str[index] == '-')
+	i = 0;
+	while (str[i] && (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
+		i++;
+	if (str[i] == '+')
+		i++;
+	else if (str[i] == '-')
 	{
 		isneg *= -1;
-		index++;
+		i++;
 	}
-	while (str[index] >= '0' && str[index] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num = (num * 10) + (str[index] - '0');
-		index++;
+		num = (num * 10) + (str[i] - '0');
+		i++;
 	}
 	return (num * isneg);
 }

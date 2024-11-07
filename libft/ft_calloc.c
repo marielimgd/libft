@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:24:41 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/06 19:19:47 by mmariano         ###   ########.fr       */
+/*   Updated: 2024/11/07 08:45:33 by marielidias      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
