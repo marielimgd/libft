@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
+/*   By: marieli <marieli@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:42:04 by marielidias       #+#    #+#             */
-/*   Updated: 2024/11/07 09:02:36 by marielidias      ###   ########.fr       */
+/*   Updated: 2025/02/03 17:54:38 by marieli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static int	substr_count(const char *str, char c)
 {
@@ -80,16 +80,16 @@ static char	**write_substr(char **res_list, const char *str, char c)
 	return (res_list);
 }
 
-char	**ft_split(char const *str, char c)
+char	**ft_split(char const *str, char delimiter)
 {
 	char	**res_list;
 
 	if (!str)
 		return (NULL);
-	res_list = ft_calloc((substr_count(str, c) + 1), sizeof(char *));
+	res_list = ft_calloc((substr_count(str, delimiter) + 1), sizeof(char *));
 	if (!res_list)
 		return (NULL);
-	if (!write_substr (res_list, str, c))
+	if (!write_substr(res_list, str, delimiter))
 		return (NULL);
 	return (res_list);
 }

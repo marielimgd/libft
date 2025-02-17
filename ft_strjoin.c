@@ -3,34 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marielidias <marielidias@student.42.fr>    +#+  +:+       +#+        */
+/*   By: marieli <marieli@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:21 by mmariano          #+#    #+#             */
-/*   Updated: 2024/10/31 19:20:06 by marielidias      ###   ########.fr       */
+/*   Updated: 2025/02/03 17:55:06 by marieli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
+#include "../includes/libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *str1, char *str2)
 {
-	size_t	total_len;
-	size_t	index;
-	size_t	index_str;
-	char	*new_str;
+	char	*new_string;
+	size_t	lens1;
+	size_t	lens2;
 
-	index = 0;
-	index_str = 0;
-	total_len = ft_strlen(s1) + ft_strlen(s2) + 1;
-	new_str = (char *)malloc(total_len);
-	if (!new_str)
+	if (str1)
+		lens1 = ft_strlen(str1);
+	else
+		lens1 = 0;
+	lens2 = ft_strlen(str2);
+	new_string = malloc(lens1 + lens2 + 1);
+	if (!new_string)
 		return (NULL);
-	while (s1[index])
-		new_str[index_str++] = s1[index++];
-	index = 0;
-	while (s2[index])
-		new_str[index_str++] = s2[index++];
-	new_str[index_str] = '\0';
-	return (new_str);
+	if (str1)
+	{
+		ft_strlcpy(new_string, str1, lens1 + 1);
+		free(str1);
+	}
+	ft_strlcpy(new_string + lens1, str2, lens2 + 1);
+	return (new_string);
 }

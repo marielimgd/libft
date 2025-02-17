@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marieli <marieli@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/01 12:17:31 by marielidias       #+#    #+#             */
-/*   Updated: 2025/02/03 17:53:37 by marieli          ###   ########.fr       */
+/*   Created: 2025/02/03 15:54:40 by marieli           #+#    #+#             */
+/*   Updated: 2025/02/17 14:09:33 by mmariano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putstr(char *str)
 {
-	if (fd < 0)
-		return ;
-	write((int)fd, &c, 1);
+	int	index;
+
+	if (!str)
+		return (ft_putstr("(null)"));
+	index = 0;
+	while (str[index])
+	{
+		write(1, &str[index], 1);
+		index++;
+	}
+	return (index);
 }
